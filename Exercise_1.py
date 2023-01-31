@@ -21,7 +21,6 @@ def parser(file_path, dates, highs, lows, rainfall):
         rnf = header.index('PRCP')
 
         #logika parsowania danych z readera csv, uzylem plikow z szkolenia ktore celowo byly z bledem, stad implementacja warunkow do instrukcji
-        
         for row in reader:
             current_date = datetime.strptime(row[date], '%Y-%m-%d')
             try:
